@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Dano Hugo Documentation Site</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content in Docs on Dano Hugo Documentation Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jul 2024 14:17:29 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Braviant Glossary Page</title>
+      <link>http://localhost:1313/docs/braviant-glossary-page/</link>
+      <pubDate>Mon, 08 Jul 2024 14:17:29 -0500</pubDate>
+      <guid>http://localhost:1313/docs/braviant-glossary-page/</guid>
+      <description>&amp;ndash; ChatGPT &amp;ndash; &amp;ldquo;Commands&amp;rdquo; link bv loan: paste loan related text string bv app status: paste a listing of application statuses bv application: paste application table related text string bv wiki page: paste my personal wiki page (this page) &amp;ndash; 0-9 &amp;ndash; link 3 Business Days select * from dw_reporting_meta.add_business_days(current_date,3) -- Adds 3 business days to a given date &amp;ndash; A &amp;ndash; link Accrued Interest Not Yet Paid DA: I have seen this definition: payoff - principal_balance + interest_accrued_today (all in loan_status_archive) ACH: Automated Clearing House ACH Daily Funding Report: dw_reporting_views.</description>
+    </item>
+  </channel>
+</rss>
