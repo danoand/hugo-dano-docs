@@ -1,4 +1,4 @@
-baseURL = 'https://hugo-dano-docs.pages.dev/docs'
+baseURL = 'https://hugo-dano-docs.pages.dev/'
 languageCode = 'en-us'
 title = 'Dano Hugo Documentation Site'
 
