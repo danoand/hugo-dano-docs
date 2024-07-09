@@ -1,7 +1,6 @@
 ---
 weight: 100
-title: "Braviant Glossary Page"
-description: ""
+title: "Braviant Glossary"
 icon: "article"
 date: "2024-07-08T14:17:29-05:00"
 lastmod: "2024-07-08T14:17:29-05:00"

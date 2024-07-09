@@ -1,7 +1,6 @@
 ---
-weight: 999
+weight: 200
 title: "bv loan"
-description: ""
 icon: "article"
 date: "2024-07-09T08:53:17-05:00"
 lastmod: "2024-07-09T08:53:17-05:00"
