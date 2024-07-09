@@ -6,7 +6,7 @@
     <description>Recent content on Dano Hugo Documentation Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jul 2024 08:53:17 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2024 10:45:20 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Braviant Glossary Page</title>
@@ -14,6 +14,13 @@
       <pubDate>Mon, 08 Jul 2024 14:17:29 -0500</pubDate>
       <guid>http://localhost:1313/docs/braviant-glossary-page/</guid>
       <description>&amp;ndash; ChatGPT &amp;ndash; &amp;ldquo;Commands&amp;rdquo; link bv loan: paste loan related text string bv app status: paste a listing of application statuses bv application: paste application table related text string bv wiki page: paste my personal wiki page (this page) &amp;ndash; 0-9 &amp;ndash; link 3 Business Days select * from dw_reporting_meta.add_business_days(current_date,3) -- Adds 3 business days to a given date &amp;ndash; A &amp;ndash; link Accrued Interest Not Yet Paid DA: I have seen this definition: payoff - principal_balance + interest_accrued_today (all in loan_status_archive) ACH: Automated Clearing House ACH Daily Funding Report: dw_reporting_views.</description>
+    </item>
+    <item>
+      <title>bv app status</title>
+      <link>http://localhost:1313/docs/chatgpt/bv_app_status/</link>
+      <pubDate>Tue, 09 Jul 2024 10:45:20 -0500</pubDate>
+      <guid>http://localhost:1313/docs/chatgpt/bv_app_status/</guid>
+      <description> APPLICATION STATUS APPLICATION SUB STATUS Not Eligible No DM Match Not Eligible No Precheck Match Pre Application Short Form Open Applied Open Basic Eligibility Open Contract Signed Open DM Check Open Documents Signed Open EV1 Data Needed Open EV1 Data Needed Funding Unsuccessful Open EV2 Data Needed Open Iovation Open Manual - Ready to Fund Open Manual Review Open Manual Review EV2 Incomplete Open New Open Offer Accepted Open Offer Displayed Open Offer Presented Open Offer Selected Open Pending Bank Information Open Pending Verification Open Precheck Open Ready to Fund Open Underwriting Approved Open Underwriting - Open Withdrawn Withdrawn Declined Basic Eligibility Declined EV1 Declined EV2 Declined Manual Decline Declined Underwriting Bureau Data Declined Underwriting No Bureau Data Approved Funded Approved Funding Unsuccessful Approved Pending LoanPro Approved Ready To Fund Closed Declined Closed Expired Closed Funded Closed Funding Unsuccessful Closed In LoanPro Closed Legacy BC Migrated Closed Other Closed Superseded Closed Withdrawn Expired Expired EV1 Expired Expired EV2 Expired Offer Presented Expired Unsigned Loan Docs </description>
     </item>
     <item>
       <title>bv loan</title>
