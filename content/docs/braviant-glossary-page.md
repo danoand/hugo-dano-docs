@@ -213,6 +213,7 @@ toc: true
   * join to `dw_reporting_bsf_origination`.`document` (?)
 * **Due Date**: Dan: re: payment due date
   * assume this is the day after the scheduled period end
+  
 ```sql
 select entity_id, entity_type, max(period_end) as last_period_end, max(period_end) + 1 as schd_loan_date
 from dw_reporting_lp.loan_active_time_tx
