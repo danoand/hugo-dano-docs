@@ -31,3 +31,7 @@ info = "**Open Source** MIT Licensed."
   btnText = "Dano Docs"
   url = "/docs/"
 
+  [hero.cta2Button]
+  icon = "construction"
+  btnText = "In Development"
+  url = "https://github.com/colinwilson/lotusdocs"
