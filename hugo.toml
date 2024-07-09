@@ -1,4 +1,4 @@
-baseURL = 'http://dananderson.dev/'
+baseURL = 'https://colinwilson.github.io'
 languageCode = 'en-us'
 title = 'Dano Hugo Documentation Site'
 
@@ -9,3 +9,13 @@ title = 'Dano Hugo Documentation Site'
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
         disable = false
+
+[[menu.primary]]
+    name  = "Docs"
+    url = "/docs/"
+    identifier = "docs"
+    weight = 10
+
+[params.docs]
+  prism = true # (optional) - Enable PrismJS syntax highlighting
+  prismTheme = "lotusdocs" # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario

@@ -671,11 +671,26 @@
 </ul>
 
 
-    
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> entity_id, entity_type, <span style="color:#66d9ef">max</span>(period_end) <span style="color:#66d9ef">as</span> last_period_end, <span style="color:#66d9ef">max</span>(period_end) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">as</span> schd_loan_date
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">from</span> dw_reporting_lp.loan_active_time_tx
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> entity_id, entity_type
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">limit</span> <span style="color:#ae81ff">1000</span></span></span></code></pre></div>
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="352748d" class="language-sql ">
+  <code>select entity_id, entity_type, max(period_end) as last_period_end, max(period_end) &#43; 1 as schd_loan_date
+from dw_reporting_lp.loan_active_time_tx
+group by entity_id, entity_type
+limit 1000</code>
+  </pre>
+  </div>
 <ul>
 <li><strong>DPD</strong>: Days Past Due</li>
 <li><strong>Draw</strong>: assume this refers to a draw on a Line of Credit (LOC) account/product</li>
