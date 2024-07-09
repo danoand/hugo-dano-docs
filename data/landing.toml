@@ -1,0 +1,33 @@
+[hero]
+enable = true
+weight = 10
+template = "hero"
+title = "Lotus Docs"
+subtitle = "A lightweight, **modern documentation** theme for Hugo. Easily customised for building **fast**, **secure**, and **SEO-friendly** documentation sites."
+info = "**Open Source** MIT Licensed."
+
+  [hero.backgroundImage]
+  path = "images/templates/hero"
+
+    [hero.backgroundImage.filename]
+    desktop = "gradient-desktop.webp"
+    mobile = "gradient-mobile.webp"
+
+  [hero.badge]
+  text = "v0.1.0"
+  color = "primary"
+  pill = false
+  soft = true
+
+  [hero.image]
+  path = "images"
+  filename = "lotus_docs_screenshot.png"
+  alt = "Lotus Docs Screenshot"
+  boxShadow = true
+  rounded = true
+
+  [hero.ctaButton]
+  icon = "rocket_launch"
+  btnText = "Dano Docs"
+  url = "/docs/"
+
