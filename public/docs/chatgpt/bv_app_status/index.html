@@ -80,6 +80,26 @@
                 
                     
                         
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_app_id_status/">
+                                
+                                bv app_id status
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_application/">
+                                
+                                bv application
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
                         <li class="current">
                             <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_app_status/">
                                 
@@ -468,10 +488,10 @@
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/docs/braviant-glossary-page/">
+		<a href="/docs/chatgpt/bv_application/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Braviant Glossary Page</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> bv application</p>
 					
 				</div>
 			</div>
@@ -670,6 +690,20 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -688,6 +722,24 @@
     index.add(
             {
                 id:  1 ,
+                href: "\/docs\/chatgpt\/bv_app_id_status\/",
+                title: "bv app_id status",
+                description: "Description linkFetch the application status and substatus for a given application_id\nselect app.application_id, aps.application_status, sst.application_sub_status, l.loan_pro_loan_id from dw_reporting_bsf_origination.application app left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.application_status_id = aps.application_status_id left join dw_reporting_bsf_identity.loan l on l.application_id = app.application_id and upper(l.asserted) = 'infinity' and upper(l.effective) = 'infinity' where upper(app.asserted) = 'infinity' and upper(app.effective) = 'infinity' and app.application_id in (2015439) ",
+                content: "Description linkFetch the application status and substatus for a given application_id\nselect app.application_id, aps.application_status, sst.application_sub_status, l.loan_pro_loan_id from dw_reporting_bsf_origination.application app left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.application_status_id = aps.application_status_id left join dw_reporting_bsf_identity.loan l on l.application_id = app.application_id and upper(l.asserted) = 'infinity' and upper(l.effective) = 'infinity' where upper(app.asserted) = 'infinity' and upper(app.effective) = 'infinity' and app.application_id in (2015439) "
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/docs\/chatgpt\/bv_application\/",
+                title: "bv application",
+                description: " dw_reporting_bsf_origination.application app and upper(app.asserted) = 'infinity' and upper(app.effective) = 'infinity' ",
+                content: " dw_reporting_bsf_origination.application app and upper(app.asserted) = 'infinity' and upper(app.effective) = 'infinity' "
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
                 href: "\/docs\/chatgpt\/bv_app_status\/",
                 title: "bv app status",
                 description: " APPLICATION STATUS APPLICATION SUB STATUS Not Eligible No DM Match Not Eligible No Precheck Match Pre Application Short Form Open Applied Open Basic Eligibility Open Contract Signed Open DM Check Open Documents Signed Open EV1 Data Needed Open EV1 Data Needed Funding Unsuccessful Open EV2 Data Needed Open Iovation Open Manual - Ready to Fund Open Manual Review Open Manual Review EV2 Incomplete Open New Open Offer Accepted Open Offer Displayed Open Offer Presented Open Offer Selected Open Pending Bank Information Open Pending Verification Open Precheck Open Ready to Fund Open Underwriting Approved Open Underwriting - Open Withdrawn Withdrawn Declined Basic Eligibility Declined EV1 Declined EV2 Declined Manual Decline Declined Underwriting Bureau Data Declined Underwriting No Bureau Data Approved Funded Approved Funding Unsuccessful Approved Pending LoanPro Approved Ready To Fund Closed Declined Closed Expired Closed Funded Closed Funding Unsuccessful Closed In LoanPro Closed Legacy BC Migrated Closed Other Closed Superseded Closed Withdrawn Expired Expired EV1 Expired Expired EV2 Expired Offer Presented Expired Unsigned Loan Docs ",
@@ -696,7 +748,7 @@
         );
     index.add(
             {
-                id:  2 ,
+                id:  4 ,
                 href: "\/docs\/chatgpt\/bv_loan\/",
                 title: "bv loan",
                 description: " dw_reporting_bsf_identity.loan l where upper(l.asserted) = 'infinity' and upper(l.effective) = 'infinity' ",
@@ -705,7 +757,7 @@
         );
     index.add(
             {
-                id:  3 ,
+                id:  5 ,
                 href: "\/docs\/",
                 title: "Docs",
                 description: "",

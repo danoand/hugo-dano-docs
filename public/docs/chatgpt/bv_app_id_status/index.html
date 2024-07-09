@@ -14,7 +14,7 @@
 
 <html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
-    <title>bv loan | Dano Hugo Documentation Site</title>
+    <title>bv app_id status | Dano Hugo Documentation Site</title>
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
@@ -29,15 +29,17 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/site.webmanifest">
-<meta property="og:title" content="bv loan" />
-<meta property="og:description" content=" dw_reporting_bsf_identity.loan l where upper(l.asserted) = &#39;infinity&#39; and upper(l.effective) = &#39;infinity&#39; " />
+<meta property="og:title" content="bv app_id status" />
+<meta property="og:description" content="Description linkFetch the application status and substatus for a given application_id
+select app.application_id, aps.application_status, sst.application_sub_status, l.loan_pro_loan_id from dw_reporting_bsf_origination.application app left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.application_status_id = aps.application_status_id left join dw_reporting_bsf_identity.loan l on l.application_id = app.application_id and upper(l.asserted) = &#39;infinity&#39; and upper(l.effective) = &#39;infinity&#39; where upper(app.asserted) = &#39;infinity&#39; and upper(app.effective) = &#39;infinity&#39; and app.application_id in (2015439) " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/docs/chatgpt/bv_loan/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_3353051808375594804.png"/><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2024-07-09T08:53:17-05:00" />
-<meta property="article:modified_time" content="2024-07-09T08:53:17-05:00" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_3353051808375594804.png"/>
-<meta name="twitter:title" content="bv loan"/>
-<meta name="twitter:description" content=" dw_reporting_bsf_identity.loan l where upper(l.asserted) = &#39;infinity&#39; and upper(l.effective) = &#39;infinity&#39; "/>
+<meta property="og:url" content="http://localhost:1313/docs/chatgpt/bv_app_id_status/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_11986727287144922635.png"/><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-07-09T16:29:55-05:00" />
+<meta property="article:modified_time" content="2024-07-09T16:29:55-05:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_11986727287144922635.png"/>
+<meta name="twitter:title" content="bv app_id status"/>
+<meta name="twitter:description" content="Description linkFetch the application status and substatus for a given application_id
+select app.application_id, aps.application_status, sst.application_sub_status, l.loan_pro_loan_id from dw_reporting_bsf_origination.application app left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.application_status_id = aps.application_status_id left join dw_reporting_bsf_identity.loan l on l.application_id = app.application_id and upper(l.asserted) = &#39;infinity&#39; and upper(l.effective) = &#39;infinity&#39; where upper(app.asserted) = &#39;infinity&#39; and upper(app.effective) = &#39;infinity&#39; and app.application_id in (2015439) "/>
 
     
     
@@ -80,7 +82,7 @@
                 
                     
                         
-                        <li class="">
+                        <li class="current">
                             <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_app_id_status/">
                                 
                                 bv app_id status
@@ -110,7 +112,7 @@
                 
                     
                         
-                        <li class="current">
+                        <li class="">
                             <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_loan/">
                                 
                                 bv loan
@@ -225,7 +227,7 @@
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">bv loan</span>
+                <span itemprop="name">bv app_id status</span>
                 <meta itemprop="position" content='2' />
             </li>
         
@@ -236,7 +238,15 @@
                                     
                                     <div class="docs-toc col-xl-3  visually-hidden  d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#description">Description</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </toc></div>
                                     
                                     
@@ -244,12 +254,20 @@
                                         <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                             Table of Contents
                                         </button>
-<nav id="toc-mobile"></nav></div>
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li><a href="#description">Description</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
                                     <div class="docs-content col-12  mt-0">
                                         <div class="mb-0 d-flex">
                                             
                                             <h1 class="content-title mb-0">
-                                                bv loan
+                                                bv app_id status
                                                 
                                             </h1>
                                         </div>
@@ -258,7 +276,8 @@
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        
+        <h3 id="description">Description <a href="#description" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Fetch the application status and substatus for a given <code>application_id</code></p>
+
 
 
   
@@ -273,9 +292,15 @@
   
 
   <div class="prism-codeblock ">
-  <pre id="be40cf3" class="language-sql ">
-  <code>dw_reporting_bsf_identity.loan l
-where upper(l.asserted) = &#39;infinity&#39; and upper(l.effective) = &#39;infinity&#39;</code>
+  <pre id="f30d09c" class="language-sql ">
+  <code>select app.application_id, aps.application_status, sst.application_sub_status, l.loan_pro_loan_id 
+from dw_reporting_bsf_origination.application app
+left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id
+left join dw_reporting_bsf_common.application_status aps on sst.application_status_id = aps.application_status_id
+left join dw_reporting_bsf_identity.loan l on l.application_id = app.application_id
+    and upper(l.asserted) = &#39;infinity&#39; and upper(l.effective) = &#39;infinity&#39;
+where upper(app.asserted) = &#39;infinity&#39; and upper(app.effective) = &#39;infinity&#39;
+    and app.application_id in (2015439)</code>
   </pre>
   </div>
 
@@ -290,10 +315,20 @@ where upper(l.asserted) = &#39;infinity&#39; and upper(l.effective) = &#39;infin
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/docs/chatgpt/bv_app_status/">
+		<a href="/docs/braviant-glossary-page/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> bv app status</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Braviant Glossary Page</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	<div class="col-sm-6 pt-2 doc-prev">
+		<a class="ms-auto" href="/docs/chatgpt/bv_application/">
+			<div class="card h-100 my-1 text-end">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">bv application <i class="material-icons align-middle">navigate_next</i></p>
 					
 				</div>
 			</div>

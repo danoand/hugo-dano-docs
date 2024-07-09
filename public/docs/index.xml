@@ -6,7 +6,7 @@
     <description>Recent content in Docs on Dano Hugo Documentation Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jul 2024 10:45:20 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2024 16:29:55 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Braviant Glossary Page</title>
@@ -14,6 +14,20 @@
       <pubDate>Mon, 08 Jul 2024 14:17:29 -0500</pubDate>
       <guid>http://localhost:1313/docs/braviant-glossary-page/</guid>
       <description>&amp;ndash; ChatGPT &amp;ndash; &amp;ldquo;Commands&amp;rdquo; link bv loan: paste loan related text string bv app status: paste a listing of application statuses bv application: paste application table related text string bv wiki page: paste my personal wiki page (this page) &amp;ndash; 0-9 &amp;ndash; link 3 Business Days select * from dw_reporting_meta.add_business_days(current_date,3) -- Adds 3 business days to a given date &amp;ndash; A &amp;ndash; link Accrued Interest Not Yet Paid DA: I have seen this definition: payoff - principal_balance + interest_accrued_today (all in loan_status_archive) ACH: Automated Clearing House ACH Daily Funding Report: dw_reporting_views.</description>
+    </item>
+    <item>
+      <title>bv app_id status</title>
+      <link>http://localhost:1313/docs/chatgpt/bv_app_id_status/</link>
+      <pubDate>Tue, 09 Jul 2024 16:29:55 -0500</pubDate>
+      <guid>http://localhost:1313/docs/chatgpt/bv_app_id_status/</guid>
+      <description>Description linkFetch the application status and substatus for a given application_id&#xA;select app.application_id, aps.application_status, sst.application_sub_status, l.loan_pro_loan_id from dw_reporting_bsf_origination.application app left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.application_status_id = aps.application_status_id left join dw_reporting_bsf_identity.loan l on l.application_id = app.application_id and upper(l.asserted) = &amp;#39;infinity&amp;#39; and upper(l.effective) = &amp;#39;infinity&amp;#39; where upper(app.asserted) = &amp;#39;infinity&amp;#39; and upper(app.effective) = &amp;#39;infinity&amp;#39; and app.application_id in (2015439) </description>
+    </item>
+    <item>
+      <title>bv application</title>
+      <link>http://localhost:1313/docs/chatgpt/bv_application/</link>
+      <pubDate>Tue, 09 Jul 2024 11:30:10 -0500</pubDate>
+      <guid>http://localhost:1313/docs/chatgpt/bv_application/</guid>
+      <description> dw_reporting_bsf_origination.application app and upper(app.asserted) = &amp;#39;infinity&amp;#39; and upper(app.effective) = &amp;#39;infinity&amp;#39; </description>
     </item>
     <item>
       <title>bv app status</title>

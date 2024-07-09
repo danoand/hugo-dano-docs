@@ -13,3 +13,4 @@ toc: false
 dw_reporting_bsf_origination.application app
 and upper(app.asserted) = 'infinity' and upper(app.effective) = 'infinity'
 ```
+
