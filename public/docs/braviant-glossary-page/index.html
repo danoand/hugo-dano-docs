@@ -118,6 +118,26 @@
                         </li>
                     
                 
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_loan_statuses/">
+                                
+                                bv loan statuses
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_app_ev_states/">
+                                
+                                bv app ev states
+                            </a>
+                        </li>
+                    
+                
             
         </ul>
         
@@ -1775,6 +1795,20 @@ limit 1000</code>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -1829,6 +1863,24 @@ limit 1000</code>
     index.add(
             {
                 id:  5 ,
+                href: "\/docs\/chatgpt\/bv_loan_statuses\/",
+                title: "bv loan statuses",
+                description: "Description linkList of loan statuses and substatuses\nGeneral Lifecycle Order link LOAN STATUS LOAN SUBSTATUS App Closed Application Expired App Closed Customer Withdrawn App Closed Denied App Closed Funding Unsuccessful App Closed Other Approved Ready to Fund Active Active Active SCRA Active Bankruptcy Active Called Due Active Cease and Desist Active Complaint Active Debt Management Active Deceased Notification Active ID Theft Notification Active Legal Active Pending Payoff Active Pending Refinance Active Pending Rescind Charged Off Bad Epic Loan Charged Off Paid Off Bad Epic Loan Closed Rescind Closed Refinanced Closed Early Payoff Closed Full Term Paid Closed Paid Off Closed Debt Sale Closed Deceased Closed Discharged Closed ID Theft Closed Settlement Denied Inactive Epic Application Paid Off Loan Bad Epic Loan Paid Off Loan Inactive Epic Loan Returned Item Active Epic Loan Returned Item Bad Epic Loan Returned Item Paid Off Bad Epic Loan Returned Item Paid Off Inactive Epic Loan Settlement Paid Off Bad Epic Loan Voided New Loan Inactive Epic Application Withdrawn Application Inactive Epic Application Alphabetical Order link LOAN STATUS LOAN SUBSTATUS Active Active Active Bankruptcy Active Called Due Active Cease and Desist Active Complaint Active Debt Management Active Deceased Notification Active ID Theft Notification Active Legal Active Pending Payoff Active Pending Refinance Active Pending Rescind Active SCRA App Closed Application Expired App Closed Customer Withdrawn App Closed Denied App Closed Funding Unsuccessful App Closed Other Approved Ready to Fund Charged Off Bad Epic Loan Charged Off Paid Off Bad Epic Loan Closed Debt Sale Closed Deceased Closed Discharged Closed Early Payoff Closed Full Term Paid Closed ID Theft Closed Paid Off Closed Refinanced Closed Rescind Closed Settlement Denied Inactive Epic Application Paid Off Loan Bad Epic Loan Paid Off Loan Inactive Epic Loan Returned Item Active Epic Loan Returned Item Bad Epic Loan Returned Item Paid Off Bad Epic Loan Returned Item Paid Off Inactive Epic Loan Settlement Paid Off Bad Epic Loan Voided New Loan Inactive Epic Application Withdrawn Application Inactive Epic Application ",
+                content: "Description linkList of loan statuses and substatuses\nGeneral Lifecycle Order link LOAN STATUS LOAN SUBSTATUS App Closed Application Expired App Closed Customer Withdrawn App Closed Denied App Closed Funding Unsuccessful App Closed Other Approved Ready to Fund Active Active Active SCRA Active Bankruptcy Active Called Due Active Cease and Desist Active Complaint Active Debt Management Active Deceased Notification Active ID Theft Notification Active Legal Active Pending Payoff Active Pending Refinance Active Pending Rescind Charged Off Bad Epic Loan Charged Off Paid Off Bad Epic Loan Closed Rescind Closed Refinanced Closed Early Payoff Closed Full Term Paid Closed Paid Off Closed Debt Sale Closed Deceased Closed Discharged Closed ID Theft Closed Settlement Denied Inactive Epic Application Paid Off Loan Bad Epic Loan Paid Off Loan Inactive Epic Loan Returned Item Active Epic Loan Returned Item Bad Epic Loan Returned Item Paid Off Bad Epic Loan Returned Item Paid Off Inactive Epic Loan Settlement Paid Off Bad Epic Loan Voided New Loan Inactive Epic Application Withdrawn Application Inactive Epic Application Alphabetical Order link LOAN STATUS LOAN SUBSTATUS Active Active Active Bankruptcy Active Called Due Active Cease and Desist Active Complaint Active Debt Management Active Deceased Notification Active ID Theft Notification Active Legal Active Pending Payoff Active Pending Refinance Active Pending Rescind Active SCRA App Closed Application Expired App Closed Customer Withdrawn App Closed Denied App Closed Funding Unsuccessful App Closed Other Approved Ready to Fund Charged Off Bad Epic Loan Charged Off Paid Off Bad Epic Loan Closed Debt Sale Closed Deceased Closed Discharged Closed Early Payoff Closed Full Term Paid Closed ID Theft Closed Paid Off Closed Refinanced Closed Rescind Closed Settlement Denied Inactive Epic Application Paid Off Loan Bad Epic Loan Paid Off Loan Inactive Epic Loan Returned Item Active Epic Loan Returned Item Bad Epic Loan Returned Item Paid Off Bad Epic Loan Returned Item Paid Off Inactive Epic Loan Settlement Paid Off Bad Epic Loan Voided New Loan Inactive Epic Application Withdrawn Application Inactive Epic Application "
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/docs\/chatgpt\/bv_app_ev_states\/",
+                title: "bv app ev states",
+                description: "Description linkSQL to display the verification states for a specific application_id\nselect evr.application_id as application_id, evt.ev_type_name as type_name, evst.ev_status_name, lower(evr.effective) as lower_effective, evr.effective, evr.asserted, aps.application_status, sst.application_sub_status from dw_reporting_bsf_origination.ev_result evr join dw_reporting_bsf_common.ev_type evt on evr.ev_type_id = evt.ev_type_id join dw_reporting_bsf_common.ev_status evst on evr.ev_status_id = evst.ev_status_id join dw_reporting_bsf_origination.application app on app.application_id = evr.application_id and upper(app.asserted) = 'infinity' and upper(app.effective) = 'infinity' left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.",
+                content: "Description linkSQL to display the verification states for a specific application_id\nselect evr.application_id as application_id, evt.ev_type_name as type_name, evst.ev_status_name, lower(evr.effective) as lower_effective, evr.effective, evr.asserted, aps.application_status, sst.application_sub_status from dw_reporting_bsf_origination.ev_result evr join dw_reporting_bsf_common.ev_type evt on evr.ev_type_id = evt.ev_type_id join dw_reporting_bsf_common.ev_status evst on evr.ev_status_id = evst.ev_status_id join dw_reporting_bsf_origination.application app on app.application_id = evr.application_id and upper(app.asserted) = 'infinity' and upper(app.effective) = 'infinity' left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.application_status_id = aps.application_status_id where evr.application_id in (2030958) and upper(evr.asserted) = 'infinity' -- and evt.ev_type_name = 'eSign' order by evr.application_id, lower(evr.effective) asc "
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
                 href: "\/docs\/",
                 title: "Docs",
                 description: "",
