@@ -294,7 +294,7 @@ tocBtn.addEventListener('hidden.bs.dropdown', event => {
   var params_default;
   var init_params = __esm({
     "ns-params:@params"() {
-      params_default = { langPath: "http://localhost:1313/docs/js/components/" };
+      params_default = { langPath: "http://localhost:63707/docs/js/components/" };
     }
   });
 
