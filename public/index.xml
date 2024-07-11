@@ -6,7 +6,7 @@
     <description>Recent content on Dano Hugo Documentation Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jul 2024 10:13:50 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2024 16:56:41 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Company Glossary</title>
@@ -63,6 +63,13 @@
       <pubDate>Wed, 10 Jul 2024 09:20:46 -0500</pubDate>
       <guid>http://localhost:1313/docs/chatgpt/bv_loan_statuses/</guid>
       <description>Description linkList of loan statuses and substatuses&#xA;General Lifecycle Order link LOAN STATUS LOAN SUBSTATUS App Closed Application Expired App Closed Customer Withdrawn App Closed Denied App Closed Funding Unsuccessful App Closed Other Approved Ready to Fund Active Active Active SCRA Active Bankruptcy Active Called Due Active Cease and Desist Active Complaint Active Debt Management Active Deceased Notification Active ID Theft Notification Active Legal Active Pending Payoff Active Pending Refinance Active Pending Rescind Charged Off Bad Epic Loan Charged Off Paid Off Bad Epic Loan Closed Rescind Closed Refinanced Closed Early Payoff Closed Full Term Paid Closed Paid Off Closed Debt Sale Closed Deceased Closed Discharged Closed ID Theft Closed Settlement Denied Inactive Epic Application Paid Off Loan Bad Epic Loan Paid Off Loan Inactive Epic Loan Returned Item Active Epic Loan Returned Item Bad Epic Loan Returned Item Paid Off Bad Epic Loan Returned Item Paid Off Inactive Epic Loan Settlement Paid Off Bad Epic Loan Voided New Loan Inactive Epic Application Withdrawn Application Inactive Epic Application Alphabetical Order link LOAN STATUS LOAN SUBSTATUS Active Active Active Bankruptcy Active Called Due Active Cease and Desist Active Complaint Active Debt Management Active Deceased Notification Active ID Theft Notification Active Legal Active Pending Payoff Active Pending Refinance Active Pending Rescind Active SCRA App Closed Application Expired App Closed Customer Withdrawn App Closed Denied App Closed Funding Unsuccessful App Closed Other Approved Ready to Fund Charged Off Bad Epic Loan Charged Off Paid Off Bad Epic Loan Closed Debt Sale Closed Deceased Closed Discharged Closed Early Payoff Closed Full Term Paid Closed ID Theft Closed Paid Off Closed Refinanced Closed Rescind Closed Settlement Denied Inactive Epic Application Paid Off Loan Bad Epic Loan Paid Off Loan Inactive Epic Loan Returned Item Active Epic Loan Returned Item Bad Epic Loan Returned Item Paid Off Bad Epic Loan Returned Item Paid Off Inactive Epic Loan Settlement Paid Off Bad Epic Loan Voided New Loan Inactive Epic Application Withdrawn Application Inactive Epic Application </description>
+    </item>
+    <item>
+      <title>dbt test passing multi args</title>
+      <link>http://localhost:1313/docs/dbt/test_passing_multi_args/</link>
+      <pubDate>Thu, 11 Jul 2024 16:56:41 -0500</pubDate>
+      <guid>http://localhost:1313/docs/dbt/test_passing_multi_args/</guid>
+      <description>Example of a dbt test in which multiple columns are passed to the test as an argument&#xA;The test itself checks if the set of columns are either all null or all not null (don&amp;rsquo;t want a mix of null and not null)&#xA;Test Code&#xA;-- tests/generic/test_all_or_none_populated.sql {% test all_or_none_populated(model, column_name, columns) %} with validation as (select {{ columns | join(&amp;#39;, &amp;#39;) }}, -- testing if all the columns in the set are null case when not ({{ columns | join(&amp;#39; IS NULL AND &amp;#39;) }} IS NULL) then 1 else 0 end as failed_all_null, -- testing if all the columns in the set are not null case when not ({{ columns | join(&amp;#39; IS NOT NULL AND &amp;#39;) }} IS NOT NULL) then 1 else 0 end as failed_all_not_null from {{ model }} ) -- test fails if there are rows where both failed_all_null = 1 and failed_all_not_null = 1 --&#x9;(ie.</description>
     </item>
   </channel>
 </rss>

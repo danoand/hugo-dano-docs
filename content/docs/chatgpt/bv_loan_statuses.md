@@ -1,5 +1,5 @@
 ---
-weight: 999
+weight: 500
 title: "bv loan statuses"
 description: ""
 icon: "article"
