@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@cloudflare/pages-plugin-cloudflare-access": "^1.0.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240712.0"
   }
 }
