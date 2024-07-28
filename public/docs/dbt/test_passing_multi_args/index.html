@@ -12,10 +12,9 @@
 
     
 
-<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en-us"><head>
     <meta charset="utf-8" />
     <title>dbt test passing multi args | Dano Hugo Documentation Site</title>
-    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
     <meta name="author" content="Colin Wilson - Lotus Labs" />
@@ -23,22 +22,22 @@
     <meta name="website" content="https://lotusdocs.dev" />
     <meta name="Version" content="v0.1.0" />
     
-    <link rel="icon" href="http://localhost:1313/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/site.webmanifest">
+    <link rel="icon" href="https://hugo-dano-docs.pages.dev/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="https://hugo-dano-docs.pages.dev/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="https://hugo-dano-docs.pages.dev/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hugo-dano-docs.pages.dev/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hugo-dano-docs.pages.dev/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="https://hugo-dano-docs.pages.dev/site.webmanifest">
 <meta property="og:title" content="dbt test passing multi args" />
 <meta property="og:description" content="Example of a dbt test in which multiple columns are passed to the test as an argument
 The test itself checks if the set of columns are either all null or all not null (don&rsquo;t want a mix of null and not null)
 Test Code
 -- tests/generic/test_all_or_none_populated.sql {% test all_or_none_populated(model, column_name, columns) %} with validation as (select {{ columns | join(&#39;, &#39;) }}, -- testing if all the columns in the set are null case when not ({{ columns | join(&#39; IS NULL AND &#39;) }} IS NULL) then 1 else 0 end as failed_all_null, -- testing if all the columns in the set are not null case when not ({{ columns | join(&#39; IS NOT NULL AND &#39;) }} IS NOT NULL) then 1 else 0 end as failed_all_not_null from {{ model }} ) -- test fails if there are rows where both failed_all_null = 1 and failed_all_not_null = 1 --	(ie." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/docs/dbt/test_passing_multi_args/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_4721509553533451626.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://hugo-dano-docs.pages.dev/docs/dbt/test_passing_multi_args/" /><meta property="og:image" content="https://hugo-dano-docs.pages.dev/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_4721509553533451626.png"/><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2024-07-11T16:56:41-05:00" />
 <meta property="article:modified_time" content="2024-07-11T16:56:41-05:00" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_4721509553533451626.png"/>
+<meta name="twitter:image" content="https://hugo-dano-docs.pages.dev/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_4721509553533451626.png"/>
 <meta name="twitter:title" content="dbt test passing multi args"/>
 <meta name="twitter:description" content="Example of a dbt test in which multiple columns are passed to the test as an argument
 The test itself checks if the set of columns are either all null or all not null (don&rsquo;t want a mix of null and not null)
@@ -49,13 +48,15 @@ Test Code
     
     
             
-                <script type="text/javascript" src="http://localhost:1313/docs/js/flexsearch.bundle.js"></script>
-            
+                
+                <script type="text/javascript" src="https://hugo-dano-docs.pages.dev/docs/js/flexsearch.bundle.min.249548594cb6843f3060a3cdd3043799676c59ce8db83358a3fc2e4d20598d05dfa6ce4994805d2835cb33b54dc9b9e7.js" integrity="sha384-JJVIWUy2hD8wYKPN0wQ3mWdsWc6NuDNYo/wuTSBZjQXfps5JlIBdKDXLM7VNybnn" crossorigin="anonymous"></script>
+                
         
     
     
 
-    <link rel="stylesheet" href="/docs/scss/style.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/docs/scss/style.min.9d50bb607e31452529d33efddb8b6b95a7fbf48238265c94882c4421af45f4e0f9da88eb85dbaacc210b99c99fa67d90.css" integrity="sha384-nVC7YH4xRSUp0z7924trlaf79II4JlyUiCxEIa9F9OD52ojrhduqzCELmcmfpn2Q"crossorigin="anonymous">
+    
     
     
     </head><body>
@@ -77,7 +78,7 @@ Test Code
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/braviant-glossary-page/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/braviant-glossary-page/">
                                 
                                 Company Glossary
                             </a>
@@ -87,7 +88,7 @@ Test Code
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_application/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_application/">
                                 
                                 bv application
                             </a>
@@ -97,7 +98,7 @@ Test Code
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_app_status/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_status/">
                                 
                                 bv app status
                             </a>
@@ -107,7 +108,7 @@ Test Code
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_app_id_status/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_id_status/">
                                 
                                 bv app_id status
                             </a>
@@ -117,7 +118,7 @@ Test Code
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_loan/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_loan/">
                                 
                                 bv loan
                             </a>
@@ -127,7 +128,7 @@ Test Code
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_settlement/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_settlement/">
                                 
                                 bv settlement
                             </a>
@@ -137,7 +138,7 @@ Test Code
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_app_ev_states/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_ev_states/">
                                 
                                 bv app ev states
                             </a>
@@ -147,7 +148,7 @@ Test Code
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_loan_statuses/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_loan_statuses/">
                                 
                                 bv loan statuses
                             </a>
@@ -157,7 +158,7 @@ Test Code
                     
                         
                         <li class="current">
-                            <a class="sidebar-root-link" href="http://localhost:1313/docs/dbt/test_passing_multi_args/">
+                            <a class="sidebar-root-link" href="https://hugo-dano-docs.pages.dev/docs/dbt/test_passing_multi_args/">
                                 
                                 dbt test passing multi args
                             </a>
@@ -436,10 +437,12 @@ models:
 
 
 
-    <script src="/docs/js/bootstrap.js" defer></script>
+    
+
+    <script src="/docs/js/bootstrap.d479bcf750dc64ea5dadc35d782fdc55066b54b6f80655bd81380639aa6289e5accdc55d58d8b2878a01876f06b22641.js" integrity="sha384-1Hm891DcZOpdrcNdeC/cVQZrVLb4BlW9gTgGOapiieWszcVdWNiyh4oBh28GsiZB"defer></script>
 
 
-    <script type="text/javascript" src="http://localhost:1313/docs/js/bundle.js" defer></script>
+    <script type="text/javascript" src="https://hugo-dano-docs.pages.dev/docs/js/bundle.min.b59f62e050323900d1468d203868e76d272c589f839d83dd39352399e385d2b6b9241db33b209d295caa245efc46596d.js" integrity="sha384-tZ9i4FAyOQDRRo0gOGjnbScsWJ&#43;DnYPdOTUjmeOF0ra5JB2zOyCdKVyqJF78Rllt" crossorigin="anonymous" defer></script>
     
 
     
