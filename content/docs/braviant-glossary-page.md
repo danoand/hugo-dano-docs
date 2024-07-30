@@ -201,6 +201,7 @@ toc: true
   * From the Decision Logic website: "_Our service provides the ability to verify a borrower’s identity, bank account number and balance in real-time. It also provides access to up to 365-days of borrowers’ bank account transaction history with a layer of advanced analytics that lead the industry. This automated real-time process empowers you to make fast and accurate decisions critical to the success of your business._"
 * **DLH**: assume Data Lake House
 * **DM**: Direct Mail
+  * **NOTE**: `live_fl` is a flag that indicates that a campaign is "live" and in effect
 * **DMC**: Debt Management Company
 * **Document Data Table**: looks like a table that holds attributes related to customer (borrower) documents handled, reviewed, or acknowledged during the loan life cycle
   * Examples:
