@@ -14,7 +14,7 @@
 
 <html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
-    <title>bv settlement | Dano Hugo Documentation Site</title>
+    <title>db table columns info | Dano Hugo Documentation Site</title>
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
@@ -29,17 +29,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/site.webmanifest">
-<meta property="og:title" content="bv settlement" />
-<meta property="og:description" content="Common queries to investigate CCBD Settlement variances
--- Fetch the Loan Level Variances for yesterday (report_date = current_date) select * from dw_reporting_views.ccbd_loan_level_variances_audit lvl where lvl.report_date = current_date -- Fetch the transactions for a specific loan_id select * from dw_reporting_views.ccbd_transactions_audit cta where cta.loan_id = 670749 " />
+<meta property="og:title" content="db table columns info" />
+<meta property="og:description" content=" SELECT c.table_schema, c.table_name, c.column_name, c.data_type FROM information_schema.columns c WHERE c.table_schema NOT IN (&#39;information_schema&#39;, &#39;pg_catalog&#39;) ORDER BY c.table_schema, c.table_name, c.ordinal_position " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/docs/chatgpt/bv_settlement/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_12352132985182585697.png"/><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2024-07-11T10:13:50-05:00" />
-<meta property="article:modified_time" content="2024-07-11T10:13:50-05:00" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_12352132985182585697.png"/>
-<meta name="twitter:title" content="bv settlement"/>
-<meta name="twitter:description" content="Common queries to investigate CCBD Settlement variances
--- Fetch the Loan Level Variances for yesterday (report_date = current_date) select * from dw_reporting_views.ccbd_loan_level_variances_audit lvl where lvl.report_date = current_date -- Fetch the transactions for a specific loan_id select * from dw_reporting_views.ccbd_transactions_audit cta where cta.loan_id = 670749 "/>
+<meta property="og:url" content="http://localhost:1313/docs/chatgpt/db-table-columns-info/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_14689458972954447677.png"/><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-07-30T14:28:55-05:00" />
+<meta property="article:modified_time" content="2024-07-30T14:28:55-05:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_14689458972954447677.png"/>
+<meta name="twitter:title" content="db table columns info"/>
+<meta name="twitter:description" content=" SELECT c.table_schema, c.table_name, c.column_name, c.data_type FROM information_schema.columns c WHERE c.table_schema NOT IN (&#39;information_schema&#39;, &#39;pg_catalog&#39;) ORDER BY c.table_schema, c.table_name, c.ordinal_position "/>
 
     
     
@@ -122,7 +120,7 @@
                 
                     
                         
-                        <li class="current">
+                        <li class="">
                             <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/bv_settlement/">
                                 
                                 bv settlement
@@ -152,10 +150,10 @@
                 
                     
                         
-                        <li class="">
+                        <li class="current">
                             <a class="sidebar-root-link" href="http://localhost:1313/docs/chatgpt/db-table-columns-info/">
                                 
-                                Db Table Columns Info
+                                db table columns info
                             </a>
                         </li>
                     
@@ -277,7 +275,7 @@
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">bv settlement</span>
+                <span itemprop="name">db table columns info</span>
                 <meta itemprop="position" content='2' />
             </li>
         
@@ -301,7 +299,7 @@
                                         <div class="mb-0 d-flex">
                                             
                                             <h1 class="content-title mb-0">
-                                                bv settlement
+                                                db table columns info
                                                 
                                             </h1>
                                         </div>
@@ -310,29 +308,7 @@
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        <p>Common queries to investigate CCBD Settlement variances</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="f673ba6" class="language-sql ">
-  <code>-- Fetch the Loan Level Variances for yesterday (report_date = current_date)
-select * from dw_reporting_views.ccbd_loan_level_variances_audit lvl
-where lvl.report_date = current_date</code>
-  </pre>
-  </div>
-
+        
 
 
   
@@ -347,10 +323,20 @@ where lvl.report_date = current_date</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="92782cd" class="language-sql ">
-  <code>-- Fetch the transactions for a specific loan_id
-select * from dw_reporting_views.ccbd_transactions_audit cta
-where cta.loan_id = 670749</code>
+  <pre id="68b7e2e" class="language-sql ">
+  <code>SELECT 
+    c.table_schema,
+    c.table_name,
+    c.column_name,
+    c.data_type
+FROM 
+    information_schema.columns c
+WHERE 
+    c.table_schema NOT IN (&#39;information_schema&#39;, &#39;pg_catalog&#39;)
+ORDER BY 
+    c.table_schema,
+    c.table_name,
+    c.ordinal_position</code>
   </pre>
   </div>
 
@@ -365,20 +351,20 @@ where cta.loan_id = 670749</code>
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/docs/chatgpt/bv_loan/">
+		<a href="/docs/chatgpt/bv_loan_statuses/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> bv loan</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> bv loan statuses</p>
 					
 				</div>
 			</div>
 		</a>
         </div>
 	<div class="col-sm-6 pt-2 doc-prev">
-		<a class="ms-auto" href="/docs/chatgpt/bv_app_ev_states/">
+		<a class="ms-auto" href="/docs/dbt/test_passing_multi_args/">
 			<div class="card h-100 my-1 text-end">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0">bv app ev states <i class="material-icons align-middle">navigate_next</i></p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">dbt test passing multi args <i class="material-icons align-middle">navigate_next</i></p>
 					
 				</div>
 			</div>
@@ -698,9 +684,9 @@ where cta.loan_id = 670749</code>
             {
                 id:  8 ,
                 href: "\/docs\/chatgpt\/db-table-columns-info\/",
-                title: "Db Table Columns Info",
-                description: "Query Database Tables, Views, and Columns link SELECT c.table_schema, c.table_name, c.column_name, c.data_type FROM information_schema.columns c WHERE c.table_schema NOT IN ('information_schema', 'pg_catalog') ORDER BY c.table_schema, c.table_name, c.ordinal_position ",
-                content: "Query Database Tables, Views, and Columns link SELECT c.table_schema, c.table_name, c.column_name, c.data_type FROM information_schema.columns c WHERE c.table_schema NOT IN ('information_schema', 'pg_catalog') ORDER BY c.table_schema, c.table_name, c.ordinal_position "
+                title: "db table columns info",
+                description: " SELECT c.table_schema, c.table_name, c.column_name, c.data_type FROM information_schema.columns c WHERE c.table_schema NOT IN ('information_schema', 'pg_catalog') ORDER BY c.table_schema, c.table_name, c.ordinal_position ",
+                content: " SELECT c.table_schema, c.table_name, c.column_name, c.data_type FROM information_schema.columns c WHERE c.table_schema NOT IN ('information_schema', 'pg_catalog') ORDER BY c.table_schema, c.table_name, c.ordinal_position "
             }
         );
     index.add(
