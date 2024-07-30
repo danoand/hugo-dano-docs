@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dano Hugo Documentation Site</title>
-    <link>https://hugo-dano-docs.pages.dev/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Dano Hugo Documentation Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jul 2024 16:56:41 -0500</lastBuildDate>
-    <atom:link href="https://hugo-dano-docs.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Company Glossary</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/braviant-glossary-page/</link>
+      <link>http://localhost:1313/docs/braviant-glossary-page/</link>
       <pubDate>Mon, 08 Jul 2024 14:17:29 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/braviant-glossary-page/</guid>
+      <guid>http://localhost:1313/docs/braviant-glossary-page/</guid>
       <description>&amp;ndash; ChatGPT &amp;ndash; &amp;ldquo;Commands&amp;rdquo; link bv loan: paste loan related text string bv app status: paste a listing of application statuses bv application: paste application table related text string bv wiki page: paste my personal wiki page (this page) &amp;ndash; 0-9 &amp;ndash; link 3 Business Days select * from dw_reporting_meta.add_business_days(current_date,3) -- Adds 3 business days to a given date &amp;ndash; A &amp;ndash; link Accrued Interest Not Yet Paid DA: I have seen this definition: payoff - principal_balance + interest_accrued_today (all in loan_status_archive) ACH: Automated Clearing House ACH Daily Funding Report: dw_reporting_views.</description>
     </item>
     <item>
       <title>bv application</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_application/</link>
+      <link>http://localhost:1313/docs/chatgpt/bv_application/</link>
       <pubDate>Tue, 09 Jul 2024 11:30:10 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_application/</guid>
+      <guid>http://localhost:1313/docs/chatgpt/bv_application/</guid>
       <description> dw_reporting_bsf_origination.application app and upper(app.asserted) = &amp;#39;infinity&amp;#39; and upper(app.effective) = &amp;#39;infinity&amp;#39; </description>
     </item>
     <item>
       <title>bv app status</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_status/</link>
+      <link>http://localhost:1313/docs/chatgpt/bv_app_status/</link>
       <pubDate>Tue, 09 Jul 2024 10:45:20 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_status/</guid>
+      <guid>http://localhost:1313/docs/chatgpt/bv_app_status/</guid>
       <description> APPLICATION STATUS APPLICATION SUB STATUS Not Eligible No DM Match Not Eligible No Precheck Match Pre Application Short Form Open Applied Open Basic Eligibility Open Contract Signed Open DM Check Open Documents Signed Open EV1 Data Needed Open EV1 Data Needed Funding Unsuccessful Open EV2 Data Needed Open Iovation Open Manual - Ready to Fund Open Manual Review Open Manual Review EV2 Incomplete Open New Open Offer Accepted Open Offer Displayed Open Offer Presented Open Offer Selected Open Pending Bank Information Open Pending Verification Open Precheck Open Ready to Fund Open Underwriting Approved Open Underwriting - Open Withdrawn Withdrawn Declined Basic Eligibility Declined EV1 Declined EV2 Declined Manual Decline Declined Underwriting Bureau Data Declined Underwriting No Bureau Data Approved Funded Approved Funding Unsuccessful Approved Pending LoanPro Approved Ready To Fund Closed Declined Closed Expired Closed Funded Closed Funding Unsuccessful Closed In LoanPro Closed Legacy BC Migrated Closed Other Closed Superseded Closed Withdrawn Expired Expired EV1 Expired Expired EV2 Expired Offer Presented Expired Unsigned Loan Docs </description>
     </item>
     <item>
       <title>bv app_id status</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_id_status/</link>
+      <link>http://localhost:1313/docs/chatgpt/bv_app_id_status/</link>
       <pubDate>Tue, 09 Jul 2024 16:29:55 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_id_status/</guid>
+      <guid>http://localhost:1313/docs/chatgpt/bv_app_id_status/</guid>
       <description>Description linkFetch the application status and substatus for a given application_id&#xA;select app.application_id, aps.application_status, sst.application_sub_status, l.loan_pro_loan_id from dw_reporting_bsf_origination.application app left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.application_status_id = aps.application_status_id left join dw_reporting_bsf_identity.loan l on l.application_id = app.application_id and upper(l.asserted) = &amp;#39;infinity&amp;#39; and upper(l.effective) = &amp;#39;infinity&amp;#39; where upper(app.asserted) = &amp;#39;infinity&amp;#39; and upper(app.effective) = &amp;#39;infinity&amp;#39; and app.application_id in (2015439) </description>
     </item>
     <item>
       <title>bv loan</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_loan/</link>
+      <link>http://localhost:1313/docs/chatgpt/bv_loan/</link>
       <pubDate>Tue, 09 Jul 2024 08:53:17 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_loan/</guid>
+      <guid>http://localhost:1313/docs/chatgpt/bv_loan/</guid>
       <description> dw_reporting_bsf_identity.loan l where upper(l.asserted) = &amp;#39;infinity&amp;#39; and upper(l.effective) = &amp;#39;infinity&amp;#39; </description>
     </item>
     <item>
       <title>bv settlement</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_settlement/</link>
+      <link>http://localhost:1313/docs/chatgpt/bv_settlement/</link>
       <pubDate>Thu, 11 Jul 2024 10:13:50 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_settlement/</guid>
+      <guid>http://localhost:1313/docs/chatgpt/bv_settlement/</guid>
       <description>Common queries to investigate CCBD Settlement variances&#xA;-- Fetch the Loan Level Variances for yesterday (report_date = current_date) select * from dw_reporting_views.ccbd_loan_level_variances_audit lvl where lvl.report_date = current_date -- Fetch the transactions for a specific loan_id select * from dw_reporting_views.ccbd_transactions_audit cta where cta.loan_id = 670749 </description>
     </item>
     <item>
       <title>bv app ev states</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_ev_states/</link>
+      <link>http://localhost:1313/docs/chatgpt/bv_app_ev_states/</link>
       <pubDate>Wed, 10 Jul 2024 08:57:08 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_app_ev_states/</guid>
+      <guid>http://localhost:1313/docs/chatgpt/bv_app_ev_states/</guid>
       <description>Description linkSQL to display the verification states for a specific application_id&#xA;select evr.application_id as application_id, evt.ev_type_name as type_name, evst.ev_status_name, lower(evr.effective) as lower_effective, evr.effective, evr.asserted, aps.application_status, sst.application_sub_status from dw_reporting_bsf_origination.ev_result evr join dw_reporting_bsf_common.ev_type evt on evr.ev_type_id = evt.ev_type_id join dw_reporting_bsf_common.ev_status evst on evr.ev_status_id = evst.ev_status_id join dw_reporting_bsf_origination.application app on app.application_id = evr.application_id and upper(app.asserted) = &amp;#39;infinity&amp;#39; and upper(app.effective) = &amp;#39;infinity&amp;#39; left join dw_reporting_bsf_common.application_sub_status sst on app.application_sub_status_id = sst.application_sub_status_id left join dw_reporting_bsf_common.application_status aps on sst.</description>
     </item>
     <item>
       <title>bv loan statuses</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_loan_statuses/</link>
+      <link>http://localhost:1313/docs/chatgpt/bv_loan_statuses/</link>
       <pubDate>Wed, 10 Jul 2024 09:20:46 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/chatgpt/bv_loan_statuses/</guid>
+      <guid>http://localhost:1313/docs/chatgpt/bv_loan_statuses/</guid>
       <description>Description linkList of loan statuses and substatuses&#xA;General Lifecycle Order link LOAN STATUS LOAN SUBSTATUS App Closed Application Expired App Closed Customer Withdrawn App Closed Denied App Closed Funding Unsuccessful App Closed Other Approved Ready to Fund Active Active Active SCRA Active Bankruptcy Active Called Due Active Cease and Desist Active Complaint Active Debt Management Active Deceased Notification Active ID Theft Notification Active Legal Active Pending Payoff Active Pending Refinance Active Pending Rescind Charged Off Bad Epic Loan Charged Off Paid Off Bad Epic Loan Closed Rescind Closed Refinanced Closed Early Payoff Closed Full Term Paid Closed Paid Off Closed Debt Sale Closed Deceased Closed Discharged Closed ID Theft Closed Settlement Denied Inactive Epic Application Paid Off Loan Bad Epic Loan Paid Off Loan Inactive Epic Loan Returned Item Active Epic Loan Returned Item Bad Epic Loan Returned Item Paid Off Bad Epic Loan Returned Item Paid Off Inactive Epic Loan Settlement Paid Off Bad Epic Loan Voided New Loan Inactive Epic Application Withdrawn Application Inactive Epic Application Alphabetical Order link LOAN STATUS LOAN SUBSTATUS Active Active Active Bankruptcy Active Called Due Active Cease and Desist Active Complaint Active Debt Management Active Deceased Notification Active ID Theft Notification Active Legal Active Pending Payoff Active Pending Refinance Active Pending Rescind Active SCRA App Closed Application Expired App Closed Customer Withdrawn App Closed Denied App Closed Funding Unsuccessful App Closed Other Approved Ready to Fund Charged Off Bad Epic Loan Charged Off Paid Off Bad Epic Loan Closed Debt Sale Closed Deceased Closed Discharged Closed Early Payoff Closed Full Term Paid Closed ID Theft Closed Paid Off Closed Refinanced Closed Rescind Closed Settlement Denied Inactive Epic Application Paid Off Loan Bad Epic Loan Paid Off Loan Inactive Epic Loan Returned Item Active Epic Loan Returned Item Bad Epic Loan Returned Item Paid Off Bad Epic Loan Returned Item Paid Off Inactive Epic Loan Settlement Paid Off Bad Epic Loan Voided New Loan Inactive Epic Application Withdrawn Application Inactive Epic Application </description>
     </item>
     <item>
       <title>dbt test passing multi args</title>
-      <link>https://hugo-dano-docs.pages.dev/docs/dbt/test_passing_multi_args/</link>
+      <link>http://localhost:1313/docs/dbt/test_passing_multi_args/</link>
       <pubDate>Thu, 11 Jul 2024 16:56:41 -0500</pubDate>
-      <guid>https://hugo-dano-docs.pages.dev/docs/dbt/test_passing_multi_args/</guid>
+      <guid>http://localhost:1313/docs/dbt/test_passing_multi_args/</guid>
       <description>Example of a dbt test in which multiple columns are passed to the test as an argument&#xA;The test itself checks if the set of columns are either all null or all not null (don&amp;rsquo;t want a mix of null and not null)&#xA;Test Code&#xA;-- tests/generic/test_all_or_none_populated.sql {% test all_or_none_populated(model, column_name, columns) %} with validation as (select {{ columns | join(&amp;#39;, &amp;#39;) }}, -- testing if all the columns in the set are null case when not ({{ columns | join(&amp;#39; IS NULL AND &amp;#39;) }} IS NULL) then 1 else 0 end as failed_all_null, -- testing if all the columns in the set are not null case when not ({{ columns | join(&amp;#39; IS NOT NULL AND &amp;#39;) }} IS NOT NULL) then 1 else 0 end as failed_all_not_null from {{ model }} ) -- test fails if there are rows where both failed_all_null = 1 and failed_all_not_null = 1 --&#x9;(ie.</description>
     </item>
   </channel>

@@ -1,9 +1,9 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "/Users/superuser/Documents/GitHub/hugo-dano-docs",
+	"sourceRoot": "/Users/dan.anderson/Documents/hugo/hugo-dano-docs",
 	"sources": [
-		"/Users/superuser/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/colinwilson/lotusdocs@v0.1.0/assets/scss/style.scss",
+		"/Users/dan.anderson/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/colinwilson/lotusdocs@v0.1.0/assets/scss/style.scss",
 		"../../../Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/twbs/bootstrap@v5.3.2+incompatible/scss/_functions.scss",
 		"../../../Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/twbs/bootstrap@v5.3.2+incompatible/scss/_variables.scss",
 		"../../../Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/colinwilson/lotusdocs@v0.1.0/assets/scss/_variables.scss",

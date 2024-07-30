@@ -212,7 +212,6 @@ toc: true
   * join to `dw_reporting_bsf_origination`.`document` (?)
 * **Due Date**: Dan: re: payment due date
   * assume this is the day after the scheduled period end
-  
 ```sql
 select entity_id, entity_type, max(period_end) as last_period_end, max(period_end) + 1 as schd_loan_date
 from dw_reporting_lp.loan_active_time_tx
@@ -625,6 +624,8 @@ limit 1000
         * `Origination`
       * Transaction Code: 
         * `WO`
+* **SSN**
+  * NOTE: `ssn_7` is the **last 7** characters of the SSN value
 * **Suspense Account**: _general business definition_ a suspense account is a bookkeeping account where funds are categorized temporarily for various reasons
   * e.g. funds are received for an ambiguous reason and the company needs more clarification to accurately categorize funds
   * e.g. borrower makes a partial payment and the company temporarily holds the payment until the balance of the full payment is received
