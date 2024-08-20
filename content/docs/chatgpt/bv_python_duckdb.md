@@ -14,5 +14,9 @@ toc: false
 In the project folder
 
 ```bash
+duckdb -cmd ".read research/duckdb/load_duckdb.cmd"
+```
+
+```bash
 source .venv/bin/activate
 ```
