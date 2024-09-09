@@ -20,3 +20,8 @@ duckdb -cmd ".read research/duckdb/load_duckdb.cmd"
 ```bash
 source .venv/bin/activate
 ```
+
+```python
+# display line number in print statement
+print(f"ERROR: line: {inspect.currentframe().f_lineno} - error generating {col} for app_id: {id} see: {err_func}")
+```
