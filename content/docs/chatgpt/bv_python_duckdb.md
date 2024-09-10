@@ -14,7 +14,7 @@ toc: false
 In the project folder
 
 ```bash
-duckdb -cmd ".read research/duckdb/load_duckdb.cmd"
+duckdb -cmd ".read research/duckdb/load_duckdb.sql"
 ```
 
 ```bash
