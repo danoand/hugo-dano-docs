@@ -25,3 +25,8 @@ source .venv/bin/activate
 # display line number in print statement
 print(f"ERROR: line: {inspect.currentframe().f_lineno} - error generating {col} for app_id: {id} see: {err_func}")
 ```
+
+```sql
+-- transform a date to UTC
+t.utc_sent_time_min AT TIME ZONE 'UTC'
+```
