@@ -11,15 +11,17 @@ toc: false
 
 ### Activate a local venv pythyon environment
 
-In the project folder
+**In the project folder**
+
+```bash
+source .venv/bin/activate
+```
 
 ```bash
 duckdb -cmd ".read research/duckdb/load_duckdb.sql"
 ```
 
-```bash
-source .venv/bin/activate
-```
+**Other statements**
 
 ```python
 # display line number in print statement
