@@ -21,6 +21,10 @@ source .venv/bin/activate
 duckdb -cmd ".read research/duckdb/load_duckdb.sql"
 ```
 
+```bash
+python3 df_compare_app_src.py
+```
+
 **Other statements**
 
 ```python
