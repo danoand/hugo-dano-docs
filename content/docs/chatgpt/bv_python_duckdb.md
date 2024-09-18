@@ -25,6 +25,11 @@ duckdb -cmd ".read research/duckdb/load_duckdb.sql"
 python3 df_compare_app_src.py
 ```
 
+```bash
+# regenerate the uat stage tables in the stage environment
+stage-table-create
+```
+
 **Other statements**
 
 ```python
