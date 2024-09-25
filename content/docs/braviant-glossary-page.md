@@ -588,6 +588,7 @@ limit 1000
 * **RTC | Right to Cure**
 	* Right to Cure notice.  Notice to a customer they are in default or delinquency and they have a right to cure the default 
 	* Assume this notice is triggered by certain events and has to adhere to federal/state regulations
+* **RTF**: assume this means `Ready to Fund` DA:?
 	
 	
 ### -- S --
