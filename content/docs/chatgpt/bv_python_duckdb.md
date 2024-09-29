@@ -35,6 +35,7 @@ stage-table-create
 ```python
 # display line number in print statement
 print(f"ERROR: line: {inspect.currentframe().f_lineno} - error generating {col} for app_id: {id} see: {err_func}")
+print(f"DEBUG: line: {inspect.currentframe().f_lineno} - app_created_at: {app_created_at} offerwall_created_at: {offerwall_created_at} expired_date: {expiration_date}")
 ```
 
 ```sql
