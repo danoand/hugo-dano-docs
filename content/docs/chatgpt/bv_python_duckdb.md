@@ -45,3 +45,7 @@ TO_CHAR(app.application_created_at AT TIME ZONE 'UTC' AT TIME ZONE 'America/Chic
 -- transform a date to UTC
 t.utc_sent_time_min AT TIME ZONE 'UTC'
 ```
+
+```python
+expiration_date = expiration_date + timedelta(hours=23, minutes=59)
+```
