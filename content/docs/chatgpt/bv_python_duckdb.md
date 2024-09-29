@@ -50,3 +50,10 @@ t.utc_sent_time_min AT TIME ZONE 'UTC'
 ```python
 expiration_date = expiration_date + timedelta(hours=23, minutes=59)
 ```
+
+```sql
+select r."column", count(*)
+from uat_app_src_results r
+group by r."column"
+order by count(*) desc
+```
